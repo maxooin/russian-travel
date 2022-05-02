@@ -7,8 +7,15 @@
   justify-content: space-between;
 }
 
-/*@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .header {
-    width: calc(100% - 96px);
+    width: calc(100% - 48px);
   }
-}*/
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+  }
+}

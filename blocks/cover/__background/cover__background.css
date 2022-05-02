@@ -5,8 +5,9 @@
   align-items: center;
   background-image: url("../../../images/dmitrii-vaccinium-22833-unsplash.jpg");
   background-size: cover;
+  background-position: center;
   width: 100%;
-  min-height: 740px;
+  min-height: 74vh;
   color: #FFFFFF;
   text-decoration: none;
   position: relative;
@@ -27,4 +28,10 @@
 
 .cover__background:hover::after {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  .cover__background {
+    min-height: 200px;
+  }
 }
