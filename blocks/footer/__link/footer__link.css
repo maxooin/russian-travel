@@ -1,4 +1,4 @@
-.footer__link {
+.footer__link a {
   margin-right: 18px;
   text-decoration: none;
   color: #FFFFFF;
@@ -8,7 +8,7 @@
 }
 
 .footer__link:hover {
-  opacity: .5;
+  opacity: .8;
 }
 
 @media screen and (max-width: 767px) {
@@ -19,7 +19,8 @@
     margin-right: 0;
   }
 
-  .footer__link:nth-of-type(5) {
-    margin-bottom: 48px;
+  .footer__link:last-child {
+    margin-bottom: 0;
   }
+
 }

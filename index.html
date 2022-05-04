@@ -13,7 +13,7 @@
 <header class="header">
   <div class="header__logo"></div>
   <div class="header__links">
-    <a class="header__link" href="#">Ru</a>
+    <a class="header__link header__link_active" href="#">Ru</a>
     <a class="header__link" href="#">En</a>
   </div>
 </header>
@@ -22,8 +22,10 @@
   <section class="lead">
     <h1 class="lead__title">Путешествия по России</h1>
     <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-    <img class="lead__image" src="images/lead_image.png" alt="Схема проезда">
-    <p class="lead__caption">ваша полка — верхняя</p>
+    <figure class="lead__figure">
+      <img class="lead__image" src="images/lead_image.png" alt="Схема проезда">
+      <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+    </figure>
   </section>
 
   <section class="intro">
@@ -35,11 +37,11 @@
       мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной
       стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
     <ul class="intro__list">
-      <li><span class="intro__list intro__list_span-accent">Часовых поясов</span> 11</li>
-      <li><span class="intro__list intro__list_span-accent">Объектов природного наследия ЮНЕСКО</span> 12</li>
-      <li><span class="intro__list intro__list_span-accent">Объектов культурного наследия ЮНЕСКО</span> 16</li>
-      <li><span class="intro__list intro__list_span-accent">Природных заповедников</span> 105</li>
-      <li><span class="intro__list intro__list_span-accent">Аэропортов</span> 241</li>
+      <li><span class="intro__list-bold">Часовых поясов</span> 11</li>
+      <li><span class="intro__list-bold">Объектов природного наследия ЮНЕСКО</span> 12</li>
+      <li><span class="intro__list-bold">Объектов культурного наследия ЮНЕСКО</span> 16</li>
+      <li><span class="intro__list-bold">Природных заповедников</span> 105</li>
+      <li><span class="intro__list-bold">Аэропортов</span> 241</li>
     </ul>
   </section>
 
@@ -176,12 +178,15 @@
 </main>
 
 <footer class="footer">
-  <nav class="footer__links">
-    <a class="footer__link" href="https://yandex.ru/maps" target="_blank">Карты</a>
-    <a class="footer__link" href="https://yandex.ru/pogoda" target="_blank">Погода</a>
-    <a class="footer__link" href="https://rasp.yandex.ru" target="_blank">Расписание</a>
-    <a class="footer__link" href="https://calendar.yandex.ru" target="_blank">Календарь</a>
-    <a class="footer__link" href="https://travel.yandex.ru" target="_blank">Путешествия</a>
+  <nav>
+    <ul class="footer__links">
+      <li class="footer__link"><a href="https://yandex.ru/maps" target="_blank">Карты</a></li>
+      <li class="footer__link"><a href="https://yandex.ru/pogoda" target="_blank">Погода</a></li>
+      <li class="footer__link"><a href="https://rasp.yandex.ru" target="_blank">Расписание</a></li>
+      <li class="footer__link"><a class="footer__link" href="https://calendar.yandex.ru" target="_blank">Календарь</a>
+      </li>
+      <li class="footer__link"><a href="https://travel.yandex.ru" target="_blank">Путешествия</a></li>
+    </ul>
   </nav>
   <p class="footer__copyright">&copy; 2022. Котин Михаил</p>
 </footer>
